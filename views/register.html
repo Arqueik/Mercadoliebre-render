@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate en MercadoLiebre</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c08cc80d65.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <div class="logo">
+            <img src="\images\logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+            </div>
+            <div class="form" action="#" method="GET">
+                <input type="text" placeholder="Buscar productos, marcas y más"/>
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <p><i class="fa-solid fa-hand-holding-dollar"></i>compra en cuotas y sin tarjeta de credito</p>
+        </div>
+        </div>
+        <nav class="site">
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        <div class="navbar">
+             <ul>
+                  <li><a href="/register">Crea tu cuenta<i class="fa-solid fa-id-card"></i></a></li>
+                  <li><a href="/login">Ingresá<i class="fa-solid fa-right-to-bracket"></i></a></li>
+                  <li><a href="/compras">Mis compras<i class="fa-solid fa-basket-shopping"></i></a></li>
+             </ul>
+        </div>
+    </nav>
+</header>
+<main>
+<section>
+<br><br>
+    <form action="/register">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input class="heigh-style" type="text" name="nombre" id="nombre">
+            <label for="usuario">Nombre de usuario:</label>
+            <input class="heigh-style" type="text" name="usuario" id="usuario">
+            <label for="email">Email:</label>
+            <input class="heigh-style" type="email" name="email" id="email">
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input class="heigh-style" type="date" name="nacimiento" id="nacimiento">
+            <label for="text">Domicilio:</label>
+            <input class="heigh-style" type="text" name="Domicilio" id="Domicilio">
+            <label>Perfil de usuario:</label>
+        <div>
+            <label><input type="radio" name="tipo-usuario" value="comprador" checked>Comprador</label>
+            <label><input type="radio" name="tipo-usuario" value="vendedor">Vendedor</label>
+        </div>
+        <label>Intereses</label>
+        <label><input class="width-style" type="checkbox" value="Electro">Electro</label>
+        <label><input class="width-style" type="checkbox" value="Moda">Moda</label>
+        <label><input class="width-style" type="checkbox" value="Hogar">Hogar</label>
+        <label><input class="width-style" type="checkbox" value="Jugeteria">Jugeteria</label>
+        <label><input class="width-style" type="checkbox" value="Vida-sana">Vida sana</label>
+        <label for="foto">Seleccionar una imagen de perfil</label>
+        <input type="file" name="foto" id="foto">
+        <br><br>
+        <label for="password">Ingrese su contraseña</label>
+        <input class="heigh-style" type="password" name="password" id="password">
+        <label for="password">Confirmar contraseña</label>
+        <input class="heigh-style" type="password" name="password" id="password">
+
+        <div class="button-form">
+        <button type="reset">Borrar datos</button>
+        <a href="/"><button type="button">Crear cuenta</button></a>
+        </div>
+    </form>
+    <br><br>
+</section>
+</main>
+</body>
+</html>

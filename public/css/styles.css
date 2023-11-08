@@ -1,0 +1,340 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+main{
+    width: 90%;
+    margin: auto;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+.main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+header div p{
+    margin: auto;
+    text-align: center;
+}
+header div.form {
+    margin: auto;
+}
+/* Box barra de busqueda */
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: 90%;
+}
+/* Box lupa de busqueda */
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 5%;
+}
+header nav ul{
+    display: flex;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h3{
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+article{
+    /* background-color: white; */
+    margin-bottom: 10px;
+    transition: 0.3s;   
+}
+.descripcion-h4{
+    display: none;
+}
+article div i{
+    transition: 0.5s;
+}
+
+body div.logo{
+    padding: 10px;
+    width: 40%;
+    margin: auto;
+}
+
+
+/* tamaños de texto */
+.cuerpo-txt{
+    font-size: 12px;
+}
+.titular-txt{
+    font-size: 24px;
+}
+.precios-txt{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.descuentos-txt .descripciones-txt{
+    font-size: 16px;
+}
+.product-img{
+    width: 100%;
+}
+
+.descripcion-articulo{
+    padding: 15px;
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+    height: 100px;
+}
+/* precio y oferta en la misma linea */
+.offer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline
+}
+.offert{
+    color: green;
+}
+ul li{
+    display: flex;
+    padding: 5px;
+}
+.product-desc-box{
+    position: relative;
+}
+.product-desc-box > .product-delivery-icon{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -30px;
+    color: #39b54a;
+    }
+.navbar, .site{
+    display: none;
+}
+
+
+
+/* paleta de colores */
+.amarillo{
+    color: #EAC926;
+}
+.amarillo-bg{
+    background-color: #EAC926;
+}
+.azul-bg{
+    background-color: #03264C;
+}
+.azul{
+    color: #03264C;
+}
+.Celeste{
+    background-color: #1259c3;
+}
+.gris_oscuro{
+    background-color:#666 ;
+}
+.gris_claro{
+    background-color: #ebebeb;
+}
+.verde{
+   background-color: #39b54a;
+}
+
+.hamburger-menu{
+    text-align: center;
+    background-color: #EAC926;
+    padding: 10%;
+    box-sizing: border-box;
+    size: 2em;
+    
+}
+
+/* iconos tamaño 2em  */
+.icon{
+    size: 2em;
+    margin-bottom: 10px;
+}
+
+form {
+    background-color: #ebebeb;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 480px;
+    margin: auto;
+    border-radius: 2%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    
+    
+
+
+}
+form input{
+    border-radius: 4px;
+    margin-top: 5px;
+    border: none;
+}
+/* Tamaño de los formularios */
+form input.heigh-style {
+    height: 30px;
+}
+form label {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+form label .width-style {
+    margin-right: 10px;
+}
+
+form button {
+    width: 100px;
+    height: 30px;
+    transition: all 0.5s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    border: none;
+    background-color: #1259c3;
+    color: white;
+
+}
+form button.ingresar {
+    width: 200px
+}
+form button:hover {
+    background-color: #02a;
+    color: white;
+    border: 0.5px solid gray;
+    }
+
+form div {
+    display: flex;
+}
+form div label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer section.footer-information {
+    display: flex;
+    font-size: 13px;
+    text-align: center;
+    margin: 15px;
+    gap: 15px;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 50px;
+    }
+footer i {
+    color: #1259c3;
+}
+
+footer p.copyright {
+    font-size: 10px;
+    color: #666;
+}
+
+span {
+    color: red;
+    font-size: 9px;
+    font-style: italic;
+
+}
+
+@media (min-width:361px ){
+/* Tablets */
+    article {
+        width: 49%;
+    }
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        i{
+            transform: rotate(-90deg);
+        }
+        .descripcion-h4{
+            display: block;
+            margin-top: 10px;
+        }
+
+    }
+    .navbar{
+        display: block;
+    }
+    nav.site{
+    display: flex;
+    justify-content: space-between;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+    
+}
+footer {
+    background-color: white;
+}
+footer section div i {
+    margin-bottom: 15px;
+}
+@media (min-width:769px ){
+    header div p{
+    margin: auto;
+    text-align: left;
+    }
+    article {
+        width: 24%;
+    }
+    body div.logo {
+        width: 25%;
+        padding: 0px;
+    }
+    footer section.footer-information {
+        display: flex;
+        flex-direction: row;
+        font-size: 13px;
+        text-align: center;
+        margin: 15px;
+        gap: 15px;
+        justify-content: space-between;
+        margin: auto;
+        padding: 0px;
+    }
+    footer section div:hover{
+        i {
+            color: #39b54a;
+        }
+    }
+
+}
