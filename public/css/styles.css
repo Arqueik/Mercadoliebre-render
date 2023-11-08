@@ -27,28 +27,35 @@ header div p{
     margin: auto;
     text-align: center;
 }
-header div.form {
-    margin: auto;
+.search-bar {
+    display: flex;
+    align-items: center;
 }
 /* Box barra de busqueda */
-header .form .input{
+.search-bar input{
     background-color: #FFF;
-    border: 1px solid #000;
+    color: #666;
+    border-radius: 4px 0px 0px 4px;
+    padding: 5px;
+    border: none;
     outline: none;
-    color: #666;
-    padding: 2px;
-    width: 90%;
 }
-/* Box lupa de busqueda */
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 5%;
-}
+/* Box glass de busqueda */
 header nav ul{
     display: flex;
 }
+
+.glass {
+    background-color: #EAC926;
+    border: none;
+}
+.glass i{
+    border-radius: 0px 4px 4px 0px;
+    background-color: #FFF;
+    padding: 6px;
+
+}
+
 .box{
     display: flex;
     flex-direction: row;
@@ -180,7 +187,7 @@ ul li{
     margin-bottom: 10px;
 }
 
-form {
+.login {
     background-color: #ebebeb;
     width: auto;
     display: flex;
@@ -195,24 +202,24 @@ form {
 
 
 }
-form input{
+.login input{
     border-radius: 4px;
     margin-top: 5px;
     border: none;
 }
-/* Tamaño de los formularios */
-form input.heigh-style {
+/* Tamaño de los .loginularios */
+.login input.heigh-style {
     height: 30px;
 }
-form label {
+.login label {
     margin-bottom: 5px;
     margin-top: 5px;
 }
-form label .width-style {
+.login label .width-style {
     margin-right: 10px;
 }
 
-form button {
+.login button {
     width: 100px;
     height: 30px;
     transition: all 0.5s;
@@ -224,19 +231,19 @@ form button {
     color: white;
 
 }
-form button.ingresar {
+.login button.ingresar {
     width: 200px
 }
-form button:hover {
+.login button:hover {
     background-color: #02a;
     color: white;
     border: 0.5px solid gray;
     }
 
-form div {
+.login div {
     display: flex;
 }
-form div label {
+.login div label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,6 +303,7 @@ span {
     nav.site{
     display: flex;
     justify-content: space-between;
+    font-size: 10px;
     }
     .hamburger-menu{
         display: none;
