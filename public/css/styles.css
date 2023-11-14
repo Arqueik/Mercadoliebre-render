@@ -272,6 +272,7 @@ footer i {
 footer p.copyright {
     font-size: 10px;
     color: #666;
+    padding: 10px;
 }
 
 span {
@@ -338,6 +339,7 @@ footer section div i {
         justify-content: space-between;
         margin: auto;
         padding: 0px;
+        max-width: 1200px;
     }
     footer section div:hover{
         i {
